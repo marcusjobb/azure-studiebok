@@ -10,10 +10,22 @@ Microsoft Azure är en molnplattform med hundratals tjänster. Den här boken fo
 
 ## I det här kapitlet
 
-- App Service — publicera webbappar utan att tänka på servrar
-- Storage Account — filer, tabeller, köer och blobs
-- Entra ID — autentisering och behörigheter
-- Key Vault — hemligheter och certifikat
-- VNet — privata nätverk i molnet
-- CosmosDB — NoSQL i Azure
-- Azure Container Registry (ACR) och Container Instances (ACI)
+**Grunder och kostnader (v.33)**
+- Kostnadsmedvetenhet — molnet fakturerar existens, inte bara användning
+- Azure-hierarkin — tenant, subscription, resource group
+- Molnmodeller och IaaS vs PaaS — beslut, inte kategorier
+- Budget och alerts — bygg skyddsnätet
+- Regioner och Availability Zones — mer än geografi
+
+**Compute och Storage (v.34)**
+- App Service Plan och Deployment slots
+- Scale up/out och Azure Functions
+- Blob Storage — tiers, egress och redundans
+- Lifecycle policy och Managed Identity
+
+**Nätverk och säkerhet (v.35)**
+- Hotbilden och VNet Integration
+- NSG och prioritetsordning
+- Private Endpoints och Network Watcher
+- Managed Identity på riktigt
+- Key Vault och RBAC
