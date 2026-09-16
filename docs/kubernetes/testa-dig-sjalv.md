@@ -8,7 +8,7 @@ nav_order: 99
 
 1. Vad menas med att Kubernetes arbetar med "önskat tillstånd" — och vad är en reconciliation loop?
 
-<details>
+<details markdown="block">
 <summary>Visa svar</summary>
 
 I stället för att skicka kommandon ("starta den här containern") beskriver du vad du vill ha ("jag vill alltid ha tre kopior"). Kubernetes jämför det önskade tillståndet med verkligheten och agerar tills de matchar. Det kallas reconciliation loop och kör konstant i bakgrunden. Pod kraschar → K8s startar en ny. Du ändrar `replicas: 5` → K8s skapar två till.
@@ -17,7 +17,7 @@ I stället för att skicka kommandon ("starta den här containern") beskriver du
 
 2. Varför skapar man sällan en Pod direkt — vad används istället och varför?
 
-<details>
+<details markdown="block">
 <summary>Visa svar</summary>
 
 Direkta pods startas inte om om de kraschar. En **Deployment** hanterar en ReplicaSet som garanterar att rätt antal pods alltid körs, hanterar rolling updates utan downtime och gör rollback möjlig. I praktiken: skapa alltid en Deployment, aldrig en direktpod i produktion.
@@ -26,7 +26,7 @@ Direkta pods startas inte om om de kraschar. En **Deployment** hanterar en Repli
 
 3. Vad är skillnaden mellan liveness probe och readiness probe?
 
-<details>
+<details markdown="block">
 <summary>Visa svar</summary>
 
 **Liveness:** "Lever appen?" Om nej → starta om containern. Fångar upp att appen fastnat i ett trasigt tillstånd.
@@ -39,7 +39,7 @@ Utan readiness probe: 502-fel under uppdateringar. Utan liveness probe: fastnade
 
 4. Vad händer om du glömmer `resources.requests` på en container i en Deployment?
 
-<details>
+<details markdown="block">
 <summary>Visa svar</summary>
 
 Schedulern vet inte hur mycket resurser containern behöver och kan packa 50 pods på en nod tills den kollapsar. Med `requests` reserverar Schedulern utrymme och kan säga "den här noden har inte plats". Om `limits` sätts och en container överstiger minnesgränsen termineras den med `OOMKilled` — det är K8s som skyddar resten av klustret.
@@ -48,7 +48,7 @@ Schedulern vet inte hur mycket resurser containern behöver och kan packa 50 pod
 
 5. Pod-IP:er ändras varje gång en pod startas om. Hur hanterar Kubernetes det problemet?
 
-<details>
+<details markdown="block">
 <summary>Visa svar</summary>
 
 Med en **Service** — en stabil nätverksadress som alltid pekar till rätt pods via labels/selectors. Servicen hittar pods med ett specifikt label (`app: min-app`) oavsett hur många de är eller vilka IP-adresser de har just nu. En `LoadBalancer`-service i AKS skapar en Azure Load Balancer med publik IP automatiskt.
@@ -57,7 +57,7 @@ Med en **Service** — en stabil nätverksadress som alltid pekar till rätt pod
 
 6. En pod fastnar i `CrashLoopBackOff`. Vad är dina första tre felsökningssteg?
 
-<details>
+<details markdown="block">
 <summary>Visa svar</summary>
 
 ```bash
