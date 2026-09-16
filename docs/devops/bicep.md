@@ -113,3 +113,34 @@ az deployment group create \
 ```
 
 **Idempotens:** kör samma kommando tio gånger — resultatet är identiskt. Resurser som redan är korrekt konfigurerade rörs inte. Det gör Bicep-deployer trygga att köra om.
+
+## Exportera befintlig infrastruktur
+
+Du behöver inte börja från noll. Exportera resurser du redan har i portalen:
+
+**Portalen:** Resurs (eller resource group) → **Export template** → ladda ner JSON.
+
+```bash
+# Konvertera ARM-JSON till Bicep
+az bicep decompile --file main.json
+
+# Eller exportera hela resource group direkt
+az group export --name rg-iths > main.json
+az bicep decompile --file main.json
+```
+
+Filen som genereras är en startpunkt — inte en färdig template. Hårdkodade värden och ingen struktur. Flytta unika värden till `param`, bygg ihop namn med `var`, ta bort det du inte behöver.
+
+Exportera när du vill se hur en resurstyp ser ut i Bicep, eller när du behöver en startpunkt för något du aldrig skrivit förut.
+
+## Terraform — samma idé, alla moln
+
+**Terraform** (från HashiCorp) är IaC som fungerar på alla moln: Azure, AWS, Google Cloud. Du skriver `.tf`-filer istället för `.bicep`.
+
+| | Bicep | Terraform |
+|---|---|---|
+| Tillverkare | Microsoft | HashiCorp |
+| Moln | Bara Azure | Alla moln |
+| Filer | `.bicep` | `.tf` (HCL) |
+
+Bicep är förstahandsvalet för Azure. Terraform används i team som hanterar infrastruktur på flera moln parallellt.
