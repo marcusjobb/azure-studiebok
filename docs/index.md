@@ -16,6 +16,7 @@ Boken används i kursen **Administrera molnlösningar** på ITHS och uppdateras 
 - **DevOps** — CI/CD med GitHub Actions och Azure Pipelines
 - **Kubernetes** — grunderna, AKS, deployments och services
 - **Ordlista** — termer och begrepp inom moln och DevOps
+- **Resurser** — videomaterial (KakashiDota) och Microsoft Learn per vecka
 
 ## Om boken
 
