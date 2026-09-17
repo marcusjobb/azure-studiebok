@@ -26,6 +26,23 @@ main.bicep → az deployment group create → ARM → Resurser i Azure
 
 Välj Bicep för all ny infrastruktur. Du stöter på ARM-templates i äldre projekt och dokumentation — bra att känna igen, men skriv inte nya.
 
+## Installera Bicep
+
+Bicep CLI är ett tillägg till Azure CLI — ingen separat installation behövs.
+
+```bash
+az bicep install
+```
+
+Uppdatera vid behov:
+
+```bash
+az bicep upgrade
+az bicep version
+```
+
+**VS Code:** installera tillägget **Bicep** (Microsoft) från Extensions-fliken för syntax-highlighting, autocomplete och inline-validering av resurstyper och API-versioner.
+
 ## Grundstruktur
 
 ```bicep
