@@ -28,6 +28,8 @@ Boken används i kursen **Administrera molnlösningar** på ITHS och uppdateras 
 
 Boken skapades för att ge studerande ett ställe att gå tillbaka till — när man glömt hur man kopplar en Managed Identity, när portalen beter sig konstigt, eller när man behöver förstå skillnaden mellan tjänsterna innan man väljer.
 
-Den uppdateras löpande i takt med kursen. Hittar du ett fel, saknar en förklaring, eller har ett bättre exempel? Hör av dig — på Discord, via skolans mail, eller öppna ett issue direkt på [GitHub](https://github.com/marcusjobb/azure-studiebok).
+Den uppdateras löpande i takt med kursen, och tanken är att den så småningom ska publiceras som en riktig bok — när jag anser att innehållet är tillräckligt komplett.
+
+Saknar du ett ämne, en tjänst, eller ett scenario du velat ha förklarat? Hör av dig — det är precis den typen av feedback som formar vad som kommer härnäst. Du hittar mig på Discord, via skolans mail, eller via ett issue på [GitHub](https://github.com/marcusjobb/azure-studiebok).
 
 /Marcus
