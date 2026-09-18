@@ -1,0 +1,30 @@
+# Azure studiebok — öppen lärobok av Marcus Ackre Medina
+
+> En praktisk guide till Azure och molntjänster med C# för YH-studerande.
+> Skriven på svenska. Fokus på det du möter i verkligheten som C#-utvecklare i molnet.
+
+## Om boken
+
+Denna bok täcker Microsoft Azure och molntjänster från ett C#-utvecklarperspektiv.
+Målgrupp: programmeringsstuderande på YH-nivå med grundläggande C#-kunskaper.
+Licens: CC BY 4.0 — fri att använda och dela.
+Källa: https://github.com/marcusjobb/azure-studiebok
+Publicerad: https://marcusjobb.github.io/azure-studiebok/
+
+## Ämnen som täcks
+
+- Introduktion till molnet och Azure
+- Azure App Service — deploya webbapplikationer
+- Azure Storage — blob, filer och tabeller
+- Azure SQL och Cosmos DB
+- Azure Functions — serverless
+- Azure Key Vault — hemligheter och konfiguration
+- Entra ID (Azure AD) — autentisering
+- Azure Container Apps och Docker-grunderna
+- CI/CD med GitHub Actions mot Azure
+- Infrastruktur som kod med Bicep
+
+## Författare
+
+Marcus Ackre Medina — lärare i mjukvaruutveckling, NionIT / ITHS / YRGO
+Kontakt: marcus.medina@nionit.com

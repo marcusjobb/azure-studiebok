@@ -1,5 +1,6 @@
 ---
 title: Azure
+description: "Azure — Azure studiebok av Marcus Ackre Medina"
 nav_order: 20
 has_children: true
 ---

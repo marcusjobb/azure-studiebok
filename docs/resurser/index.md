@@ -1,5 +1,6 @@
 ---
 title: Resurser
+description: "Resurser — Azure studiebok av Marcus Ackre Medina"
 nav_order: 90
 has_children: true
 ---

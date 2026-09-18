@@ -1,5 +1,6 @@
 ---
 title: Licens
+description: "Licens — Azure studiebok av Marcus Ackre Medina"
 nav_order: 999
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Kubernetes — önskat tillstånd och självläkning
+description: "Kubernetes — önskat tillstånd och självläkning i Kubernetes — Azure studiebok av Marcus Ackre Medina"
 parent: Kubernetes
 nav_order: 1
 ---

@@ -1,5 +1,6 @@
 ---
 title: Lifecycle policy och Managed Identity
+description: "Lifecycle policy och Managed Identity i Azure — Azure studiebok av Marcus Ackre Medina"
 parent: Azure
 nav_order: 9
 ---

@@ -1,5 +1,6 @@
 ---
 title: Swagger och Swashbuckle
+description: "Swagger och Swashbuckle i DevOps & CI/CD — Azure studiebok av Marcus Ackre Medina"
 parent: DevOps & CI/CD
 nav_order: 25
 ---

@@ -1,5 +1,6 @@
 ---
 title: Private Endpoints och Network Watcher
+description: "Private Endpoints och Network Watcher i Azure — Azure studiebok av Marcus Ackre Medina"
 parent: Azure
 nav_order: 12
 ---

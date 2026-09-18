@@ -1,5 +1,6 @@
 ---
 title: Scalar och OpenAPI
+description: "Scalar och OpenAPI i DevOps & CI/CD — Azure studiebok av Marcus Ackre Medina"
 parent: DevOps & CI/CD
 nav_order: 20
 ---

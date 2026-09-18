@@ -1,5 +1,6 @@
 ---
 title: Docker
+description: "Docker — Azure studiebok av Marcus Ackre Medina"
 nav_order: 10
 has_children: true
 ---

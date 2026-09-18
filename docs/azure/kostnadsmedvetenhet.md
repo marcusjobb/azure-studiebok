@@ -1,5 +1,6 @@
 ---
 title: Kostnadsmedvetenhet
+description: "Kostnadsmedvetenhet i Azure — Azure studiebok av Marcus Ackre Medina"
 parent: Azure
 nav_order: 1
 ---

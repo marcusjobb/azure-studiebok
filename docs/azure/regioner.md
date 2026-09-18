@@ -1,5 +1,6 @@
 ---
 title: Regioner och Availability Zones
+description: "Regioner och Availability Zones i Azure — Azure studiebok av Marcus Ackre Medina"
 parent: Azure
 nav_order: 5
 ---

@@ -1,5 +1,6 @@
 ---
 title: Managed Identity på riktigt
+description: "Managed Identity på riktigt i Azure — Azure studiebok av Marcus Ackre Medina"
 parent: Azure
 nav_order: 13
 ---

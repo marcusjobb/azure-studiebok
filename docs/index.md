@@ -1,5 +1,6 @@
 ---
 title: Startsida
+description: "Startsida — Azure studiebok av Marcus Ackre Medina"
 nav_order: 1
 ---
 

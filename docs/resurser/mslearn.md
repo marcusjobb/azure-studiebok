@@ -1,5 +1,6 @@
 ---
 title: Microsoft Learn
+description: "Microsoft Learn i Resurser — Azure studiebok av Marcus Ackre Medina"
 parent: Resurser
 nav_order: 2
 ---

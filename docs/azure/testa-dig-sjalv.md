@@ -1,5 +1,6 @@
 ---
 title: Testa dig själv
+description: "Testa dig själv i Azure — Azure studiebok av Marcus Ackre Medina"
 parent: Azure
 nav_order: 99
 ---

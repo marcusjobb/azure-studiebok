@@ -1,5 +1,6 @@
 ---
 title: Kubernetes
+description: "Kubernetes — Azure studiebok av Marcus Ackre Medina"
 nav_order: 40
 has_children: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: Testa dig själv
+description: "Testa dig själv i Kubernetes — Azure studiebok av Marcus Ackre Medina"
 parent: Kubernetes
 nav_order: 99
 ---

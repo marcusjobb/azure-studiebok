@@ -1,5 +1,6 @@
 ---
 title: DevOps & CI/CD
+description: "DevOps & CI/CD — Azure studiebok av Marcus Ackre Medina"
 nav_order: 30
 has_children: true
 ---

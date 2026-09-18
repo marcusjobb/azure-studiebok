@@ -1,5 +1,6 @@
 ---
 title: CI/CD och OpenAPI
+description: "CI/CD och OpenAPI i DevOps — Azure studiebok av Marcus Ackre Medina"
 parent: DevOps
 nav_order: 1
 ---

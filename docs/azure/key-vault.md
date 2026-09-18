@@ -1,5 +1,6 @@
 ---
 title: Key Vault och RBAC
+description: "Key Vault och RBAC i Azure — Azure studiebok av Marcus Ackre Medina"
 parent: Azure
 nav_order: 14
 ---

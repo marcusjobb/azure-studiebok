@@ -1,5 +1,6 @@
 ---
 title: Ordlista
+description: "Ordlista — Azure studiebok av Marcus Ackre Medina"
 nav_order: 50
 has_children: false
 ---

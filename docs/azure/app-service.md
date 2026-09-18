@@ -1,5 +1,6 @@
 ---
 title: App Service Plan och Deployment slots
+description: "App Service Plan och Deployment slots i Azure — Azure studiebok av Marcus Ackre Medina"
 parent: Azure
 nav_order: 6
 ---

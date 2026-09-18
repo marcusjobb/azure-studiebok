@@ -1,5 +1,6 @@
 ---
 title: Docker i produktion
+description: "Docker i produktion i Docker — Azure studiebok av Marcus Ackre Medina"
 parent: Docker
 nav_order: 1
 ---

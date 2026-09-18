@@ -1,5 +1,6 @@
 ---
 title: IaC och Azure ML
+description: "IaC och Azure ML i DevOps — Azure studiebok av Marcus Ackre Medina"
 parent: DevOps
 nav_order: 2
 ---

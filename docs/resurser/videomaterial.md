@@ -1,5 +1,6 @@
 ---
 title: Videomaterial
+description: "Videomaterial i Resurser — Azure studiebok av Marcus Ackre Medina"
 parent: Resurser
 nav_order: 1
 ---

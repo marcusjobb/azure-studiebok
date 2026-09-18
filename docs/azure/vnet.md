@@ -1,5 +1,6 @@
 ---
 title: Hotbilden och VNet Integration
+description: "Hotbilden och VNet Integration i Azure — Azure studiebok av Marcus Ackre Medina"
 parent: Azure
 nav_order: 10
 ---
