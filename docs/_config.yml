@@ -24,6 +24,11 @@ back_to_top_text: "Till toppen"
 
 navbar_footer_text: "© Marcus Ackre Medina"
 
+# Author metadata — indexed by search engines and AI crawlers via JSON-LD
+author:
+  name: Marcus Ackre Medina
+  url: https://www.linkedin.com/in/marcusmedina/
+
 # Callouts
 callouts_level: quiet
 callouts:
