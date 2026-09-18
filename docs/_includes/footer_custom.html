@@ -1,0 +1,162 @@
+<style>
+  .book-tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 0 0.25rem;
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--border-color, #e6e6e6);
+    font-size: 0.8rem;
+  }
+
+  .book-tools-label {
+    color: var(--body-text-color, #5c5962);
+    opacity: 0.7;
+    white-space: nowrap;
+  }
+
+  .btn-book-tool {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    padding: 0.25rem 0.65rem;
+    border: 1px solid var(--border-color, #e6e6e6);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--body-text-color, #5c5962);
+    font-size: 0.8rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    white-space: nowrap;
+  }
+
+  .btn-book-tool:hover {
+    background: var(--sidebar-color, #f5f6fa);
+    border-color: var(--link-color, #7253ed);
+  }
+
+  .btn-book-tool[aria-pressed="true"] {
+    background: var(--link-color, #7253ed);
+    border-color: var(--link-color, #7253ed);
+    color: #fff;
+  }
+
+  /* Dölj Google Translates egna attributionbanner */
+  .goog-te-banner-frame { display: none !important; }
+  body { top: 0 !important; }
+
+  /* Enkel styling av translate-widgeten */
+  #google_translate_element .goog-te-gadget-simple {
+    border: 1px solid var(--border-color, #e6e6e6);
+    border-radius: 4px;
+    padding: 0.15rem 0.4rem;
+    background: transparent;
+    font-size: 0.8rem;
+  }
+  #google_translate_element .goog-te-gadget-simple a {
+    color: var(--body-text-color, #5c5962) !important;
+    text-decoration: none;
+  }
+</style>
+
+<div class="book-tools" aria-label="Läsverktyg">
+  <span class="book-tools-label">Läsverktyg:</span>
+
+  <button id="bionic-toggle" class="btn-book-tool" aria-pressed="false" title="Bionic reading betonar första halvan av varje ord för snabbare läsning">
+    <strong>Bio</strong>nic läsning
+  </button>
+
+  <div id="google_translate_element" title="Översätt sidan"></div>
+</div>
+
+<script>
+/* Bionic Reading */
+(function () {
+  var COOKIE = 'bionicReading';
+  var SKIP_TAGS = { SCRIPT: 1, STYLE: 1, CODE: 1, PRE: 1, KBD: 1, SAMP: 1, BUTTON: 1 };
+
+  function setCookie(name, val, days) {
+    var d = new Date();
+    d.setTime(d.getTime() + days * 864e5);
+    document.cookie = name + '=' + val + '; expires=' + d.toUTCString() + '; path=/';
+  }
+
+  function getCookie(name) {
+    var pairs = document.cookie.split(';');
+    for (var i = 0; i < pairs.length; i++) {
+      var pair = pairs[i].trim().split('=');
+      if (pair[0] === name) return pair[1];
+    }
+    return null;
+  }
+
+  function bionicWord(word) {
+    /* Betonar första hälften (avrundat uppåt) av varje ord */
+    if (word.length <= 1) return word;
+    var boldLen = Math.ceil(word.length / 2);
+    return '<strong>' + word.slice(0, boldLen) + '</strong>' + word.slice(boldLen);
+  }
+
+  function applyBionic(node) {
+    if (node.nodeType === 3) {
+      var text = node.textContent;
+      if (!text.trim()) return;
+      var html = text.split(' ').map(function (w) {
+        /* Bevara eventuell interpunktion i slutet */
+        var match = w.match(/^([A-Za-zÅÄÖåäöÉéÜüÑñÀ-ɏ]+)(.*)$/);
+        if (!match || match[1].length <= 1) return w;
+        return bionicWord(match[1]) + match[2];
+      }).join(' ');
+      var span = document.createElement('span');
+      span.innerHTML = html;
+      if (node.parentNode) node.parentNode.replaceChild(span, node);
+    } else if (node.nodeType === 1 && !SKIP_TAGS[node.tagName]) {
+      Array.from(node.childNodes).forEach(applyBionic);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('bionic-toggle');
+    var content = document.getElementById('main-content');
+    var active = getCookie(COOKIE) === 'true';
+
+    function updateBtn() {
+      btn.setAttribute('aria-pressed', String(active));
+      btn.innerHTML = active
+        ? '<strong>Bio</strong>nic läsning ✓'
+        : '<strong>Bio</strong>nic läsning';
+    }
+
+    if (active && content) applyBionic(content);
+    updateBtn();
+
+    btn.addEventListener('click', function () {
+      active = !active;
+      setCookie(COOKIE, active, 30);
+      updateBtn();
+      if (active) {
+        applyBionic(content);
+      } else {
+        window.location.reload();
+      }
+    });
+  });
+})();
+</script>
+
+<!-- Google Translate -->
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'sv',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    },
+    'google_translate_element'
+  );
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async defer></script>
