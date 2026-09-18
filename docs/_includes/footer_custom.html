@@ -27,65 +27,51 @@
     font-size: 0.875rem;
     font-family: inherit;
     cursor: pointer;
-    transition: opacity 0.15s, background 0.15s;
+    text-decoration: none;
+    transition: background 0.15s;
     white-space: nowrap;
   }
 
   .btn-book-tool:hover {
-    opacity: 1;
     background: rgba(127, 127, 127, 0.15);
+    text-decoration: none;
+    color: inherit;
   }
 
   .btn-book-tool[aria-pressed="true"] {
     background: var(--link-color, #7253ed);
     border-color: var(--link-color, #7253ed);
     color: #fff;
-    opacity: 1;
-  }
-
-  /* Google Translate — ram runt widgeten */
-  #google_translate_element {
-    display: inline-flex;
-    align-items: center;
-    border: 1.5px solid currentColor;
-    border-radius: 6px;
-    padding: 0.15rem 0.4rem;
-    font-size: 0.875rem;
-  }
-
-  /* Dölj Googles banner som hoppar upp sidan */
-  .goog-te-banner-frame { display: none !important; }
-  body { top: 0 !important; }
-
-  /* Anpassa select-elementet inuti widgeten */
-  .goog-te-gadget-simple {
-    background: transparent !important;
-    border: none !important;
-    font-size: 0.875rem !important;
-  }
-
-  .goog-te-gadget-simple a,
-  .goog-te-gadget-simple span {
-    color: inherit !important;
-    text-decoration: none !important;
   }
 </style>
 
 <div class="book-tools" aria-label="Läsverktyg">
   <span class="book-tools-label">Läsverktyg:</span>
 
-  <button id="bionic-toggle" class="btn-book-tool" aria-pressed="false" title="Bionic reading betonar första halvan av varje ord för snabbare läsning">
+  <button id="bionic-toggle" class="btn-book-tool" aria-pressed="false"
+          title="Bionic reading betonar första halvan av varje ord för snabbare läsning">
     <strong>Bio</strong>nic läsning
   </button>
 
-  <div id="google_translate_element" title="Översätt sidan"></div>
+  <a id="translate-link" href="#" target="_blank" rel="noopener" class="btn-book-tool"
+     title="Öppnar sidan i Google Translate">
+    🌐 Översätt sidan
+  </a>
 </div>
+
+<script>
+/* Sätt översättningslänken dynamiskt till aktuell sidas URL */
+document.addEventListener('DOMContentLoaded', function () {
+  var link = document.getElementById('translate-link');
+  link.href = 'https://translate.google.com/translate?sl=sv&u=' + encodeURIComponent(window.location.href);
+});
+</script>
 
 <script>
 /* Bionic Reading */
 (function () {
   var COOKIE = 'bionicReading';
-  var SKIP_TAGS = { SCRIPT: 1, STYLE: 1, CODE: 1, PRE: 1, KBD: 1, SAMP: 1, BUTTON: 1 };
+  var SKIP_TAGS = { SCRIPT: 1, STYLE: 1, CODE: 1, PRE: 1, KBD: 1, SAMP: 1, BUTTON: 1, A: 0 };
 
   function setCookie(name, val, days) {
     var d = new Date();
@@ -153,18 +139,3 @@
   });
 })();
 </script>
-
-<!-- Google Translate -->
-<script>
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    {
-      pageLanguage: 'sv',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-      autoDisplay: false
-    },
-    'google_translate_element'
-  );
-}
-</script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async defer></script>
