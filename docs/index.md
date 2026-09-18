@@ -26,5 +26,8 @@ Boken används i kursen **Administrera molnlösningar** på ITHS och uppdateras 
 
 ## Om boken
 
-Skriven av Marcus Ackre Medina, lärare på ITHS via Nion Education.  
-Källkod och rättelser: [github.com/marcusjobb/azure-studiebok](https://github.com/marcusjobb/azure-studiebok)
+Boken skapades för att ge studerande ett ställe att gå tillbaka till — när man glömt hur man kopplar en Managed Identity, när portalen beter sig konstigt, eller när man behöver förstå skillnaden mellan tjänsterna innan man väljer.
+
+Den uppdateras löpande i takt med kursen. Hittar du ett fel, saknar en förklaring, eller har ett bättre exempel? Hör av dig — på Discord, via skolans mail, eller öppna ett issue direkt på [GitHub](https://github.com/marcusjobb/azure-studiebok).
+
+/Marcus
