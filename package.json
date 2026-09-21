@@ -1,0 +1,17 @@
+{
+  "name": "azure-studiebok",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --root site",
+    "build": "astro build --root site",
+    "postbuild": "npx pagefind --site site/dist",
+    "preview": "astro preview --root site"
+  },
+  "dependencies": {
+    "astro": "^5.18.2",
+    "@astrojs/sitemap": "^3.7.4",
+    "astro-expressive-code": "^0.44.2",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-slug": "^6.0.0"
+  }
+}
