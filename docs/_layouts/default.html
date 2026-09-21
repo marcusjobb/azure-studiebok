@@ -55,7 +55,8 @@
 
     <ul class="module-list">
       {% assign all_nav = site.pages | where_exp: "p", "p.nav_order != null" | sort: "nav_order" %}
-      {% assign sections = all_nav | where_exp: "p", "p.parent == nil and p.layout != 'home'" %}
+      {% assign no_parent = all_nav | where_exp: "p", "p.parent == blank" %}
+      {% assign sections = no_parent | where_exp: "p", "p.layout != 'home'" %}
       {% for section in sections %}
         {% assign is_active_section = false %}
         {% if page.url == section.url %}
