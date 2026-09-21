@@ -72,7 +72,7 @@
              {% if page.url == section.url %}aria-current="page"{% endif %}>
             {{ section.title }}
           </a>
-          {% if children.size > 0 and is_active_section %}
+          {% if children.size > 0 %}
           <ul class="sub-list">
             {% for child in children %}
             <li>
