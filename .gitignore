@@ -4,4 +4,4 @@ docs/.bundle/
 node_modules/
 site/dist/
 site/.astro/
-package-lock.json
+# package-lock.json — behövs av npm ci i CI, ignoreras inte längre
