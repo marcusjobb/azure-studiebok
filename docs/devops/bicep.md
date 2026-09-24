@@ -1,6 +1,6 @@
 ---
 title: Bicep och IaC
-description: "Bicep och IaC i DevOps & CI/CD — Azure studiebok av Marcus Ackre Medina"
+description: "Du konfigurerar VNet, NSG, storage account och App Service i Azure-portalen. Det tar timmar. Nästa vecka ska du sätta upp samma sak i en annan region …"
 parent: DevOps & CI/CD
 nav_order: 30
 ---

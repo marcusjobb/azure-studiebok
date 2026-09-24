@@ -1,6 +1,6 @@
 ---
 title: IaC och Azure ML
-description: "IaC och Azure ML i DevOps — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för vecka 39. Läs detta efter tisdagens föreläsning."
 parent: DevOps
 nav_order: 2
 ---

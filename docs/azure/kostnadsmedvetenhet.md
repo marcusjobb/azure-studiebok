@@ -1,6 +1,6 @@
 ---
 title: Kostnadsmedvetenhet
-description: "Kostnadsmedvetenhet i Azure — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för lektion 1, vecka 33. Läs efter tisdagens första pass."
 parent: Azure
 nav_order: 1
 ---

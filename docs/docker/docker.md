@@ -1,6 +1,6 @@
 ---
 title: Docker i produktion
-description: "Docker i produktion i Docker — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för vecka 36. Läs detta efter tisdagens föreläsning."
 parent: Docker
 nav_order: 1
 ---

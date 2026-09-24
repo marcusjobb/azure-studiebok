@@ -1,6 +1,6 @@
 ---
 title: Molnmodeller och IaaS vs PaaS
-description: "Molnmodeller och IaaS vs PaaS i Azure — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för lektion 3, vecka 33. Läs efter tisdagens tredje pass."
 parent: Azure
 nav_order: 3
 ---

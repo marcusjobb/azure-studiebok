@@ -1,6 +1,6 @@
 ---
 title: DevOps & CI/CD
-description: "DevOps & CI/CD — Azure studiebok av Marcus Ackre Medina"
+description: "DevOps handlar om att korta vägen från kod till produktion. CI/CD (Continuous Integration / Continuous Deployment) automatiserar bygg, test och…"
 nav_order: 30
 has_children: true
 ---

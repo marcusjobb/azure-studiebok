@@ -1,6 +1,6 @@
 ---
 title: Hotbilden och VNet Integration
-description: "Hotbilden och VNet Integration i Azure — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för lektion 1, vecka 35. Läs efter tisdagens första pass."
 parent: Azure
 nav_order: 10
 ---

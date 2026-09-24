@@ -1,6 +1,6 @@
 ---
 title: Key Vault och RBAC
-description: "Key Vault och RBAC i Azure — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för lektion 5, vecka 35. Läs efter torsdagens andra pass."
 parent: Azure
 nav_order: 14
 ---

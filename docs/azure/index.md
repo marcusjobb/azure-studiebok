@@ -1,6 +1,6 @@
 ---
 title: Azure
-description: "Azure — Azure studiebok av Marcus Ackre Medina"
+description: "Microsoft Azure är en molnplattform med hundratals tjänster. Den här boken fokuserar på de tjänster du möter som .NET-utvecklare på ett normalt projekt."
 nav_order: 20
 has_children: true
 ---

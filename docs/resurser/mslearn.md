@@ -1,6 +1,6 @@
 ---
 title: Microsoft Learn
-description: "Microsoft Learn i Resurser — Azure studiebok av Marcus Ackre Medina"
+description: "Moduler och sandboxar kopplade till kursens övningar. Använd dem för hands-on-labbar och som referens."
 parent: Resurser
 nav_order: 2
 ---

@@ -1,6 +1,6 @@
 ---
 title: Budget och alerts
-description: "Budget och alerts i Azure — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för lektion 4, vecka 33. Läs efter torsdagens första pass."
 parent: Azure
 nav_order: 4
 ---

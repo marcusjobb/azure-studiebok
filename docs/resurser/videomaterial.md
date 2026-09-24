@@ -1,6 +1,6 @@
 ---
 title: Videomaterial
-description: "Videomaterial i Resurser — Azure studiebok av Marcus Ackre Medina"
+description: "Rekommenderade videos från @KakashiDota som komplement till kursen Administrera molnlösningar."
 parent: Resurser
 nav_order: 1
 ---

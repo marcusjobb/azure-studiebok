@@ -1,6 +1,6 @@
 ---
 title: NSG och prioritetsordning
-description: "NSG och prioritetsordning i Azure — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för lektion 2, vecka 35. Läs efter tisdagens andra pass."
 parent: Azure
 nav_order: 11
 ---

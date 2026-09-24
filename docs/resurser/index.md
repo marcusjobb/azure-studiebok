@@ -1,6 +1,6 @@
 ---
 title: Resurser
-description: "Resurser — Azure studiebok av Marcus Ackre Medina"
+description: "Samlad lista på videomaterial och Microsoft Learn-moduler som används i kursen Administrera molnlösningar."
 nav_order: 90
 has_children: true
 ---

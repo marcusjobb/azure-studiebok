@@ -1,6 +1,6 @@
 ---
 title: Docker
-description: "Docker — Azure studiebok av Marcus Ackre Medina"
+description: "Containers är grunden för modern molndrift. Docker låter dig paketera en applikation med allt den behöver — runtime, bibliotek, konfiguration — i en…"
 nav_order: 10
 has_children: true
 ---

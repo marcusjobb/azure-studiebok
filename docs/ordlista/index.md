@@ -1,6 +1,6 @@
 ---
 title: Ordlista
-description: "Ordlista — Azure studiebok av Marcus Ackre Medina"
+description: "Termer och begrepp inom moln, containers och DevOps."
 nav_order: 50
 has_children: false
 ---

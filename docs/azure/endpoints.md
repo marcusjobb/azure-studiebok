@@ -1,6 +1,6 @@
 ---
 title: Private Endpoints och Network Watcher
-description: "Private Endpoints och Network Watcher i Azure — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för lektion 3, vecka 35. Läs efter tisdagens tredje pass."
 parent: Azure
 nav_order: 12
 ---

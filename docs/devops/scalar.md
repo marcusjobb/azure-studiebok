@@ -1,6 +1,6 @@
 ---
 title: Scalar och OpenAPI
-description: "Scalar och OpenAPI i DevOps & CI/CD — Azure studiebok av Marcus Ackre Medina"
+description: "När du bygger ett API behöver någon annan veta hur man använder det. Vilka endpoints finns? Vad returnerar de? Vad händer om ett värde saknas? Utan…"
 parent: DevOps & CI/CD
 nav_order: 20
 ---

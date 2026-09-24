@@ -1,6 +1,6 @@
 ---
 title: Scale up/out och Azure Functions
-description: "Scale up/out och Azure Functions i Azure — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för lektion 3, vecka 34. Läs efter tisdagens tredje pass."
 parent: Azure
 nav_order: 7
 ---

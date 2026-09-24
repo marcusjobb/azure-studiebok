@@ -1,6 +1,6 @@
 ---
 title: Swagger och Swashbuckle
-description: "Swagger och Swashbuckle i DevOps & CI/CD — Azure studiebok av Marcus Ackre Medina"
+description: "Swagger är ett av de mest spridda verktygen för att dokumentera REST API:er. I .NET-världen implementeras det via NuGet-paketet Swashbuckle, och du kommer…"
 parent: DevOps & CI/CD
 nav_order: 25
 ---

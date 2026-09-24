@@ -1,6 +1,6 @@
 ---
 title: CI/CD och OpenAPI
-description: "CI/CD och OpenAPI i DevOps — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för vecka 38. Läs detta efter tisdagens föreläsning."
 parent: DevOps
 nav_order: 1
 ---

@@ -1,6 +1,6 @@
 ---
 title: Licens
-description: "Licens — Azure studiebok av Marcus Ackre Medina"
+description: "Du får fritt: © Marcus Ackre Medina via Nion Education Publicerad under Creative Commons Erkännande-Ickekommersiell 4.0 (CC BY-NC 4.0)"
 nav_order: 999
 ---
 

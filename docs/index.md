@@ -1,6 +1,6 @@
 ---
 title: Startsida
-description: "Startsida — Azure studiebok av Marcus Ackre Medina"
+description: "Det här är inte en kurs. Det är ett uppslagsverk. Du förväntas inte läsa det från början till slut — du använder det när du glömt hur man kopplar en…"
 nav_order: 1
 ---
 

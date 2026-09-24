@@ -1,6 +1,6 @@
 ---
 title: Kubernetes — önskat tillstånd och självläkning
-description: "Kubernetes — önskat tillstånd och självläkning i Kubernetes — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för vecka 37. Läs detta efter tisdagens föreläsning."
 parent: Kubernetes
 nav_order: 1
 ---

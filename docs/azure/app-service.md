@@ -1,6 +1,6 @@
 ---
 title: App Service Plan och Deployment slots
-description: "App Service Plan och Deployment slots i Azure — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för lektion 2, vecka 34. Läs efter tisdagens andra pass."
 parent: Azure
 nav_order: 6
 ---

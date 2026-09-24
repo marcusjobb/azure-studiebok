@@ -1,6 +1,6 @@
 ---
 title: Kubernetes
-description: "Kubernetes — Azure studiebok av Marcus Ackre Medina"
+description: "Kubernetes (K8s) är ett system för att köra och skala containeriserade applikationer. Azure erbjuder det som en managad tjänst — Azure Kubernetes Service…"
 nav_order: 40
 has_children: true
 ---

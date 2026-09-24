@@ -1,6 +1,6 @@
 ---
 title: Blob Storage — vad det faktiskt kostar
-description: "Blob Storage — vad det faktiskt kostar i Azure — Azure studiebok av Marcus Ackre Medina"
+description: "> Läsmaterial för lektion 4, vecka 34. Läs efter torsdagens första pass."
 parent: Azure
 nav_order: 8
 ---
