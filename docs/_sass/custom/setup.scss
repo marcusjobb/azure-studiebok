@@ -1,5 +1,0 @@
-// Bredare innehållskolumn — temats default (50rem/800px) lämnar enorma
-// tomma ytor på breda skärmar. Måste sättas HÄR (setup, inte custom.scss)
-// eftersom just-the-docs importerar setup FÖRE modules/*, som är där
-// $content-width faktiskt används för att bygga layouten.
-$content-width: 75rem; // default: 50rem
