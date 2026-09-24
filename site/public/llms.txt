@@ -1,0 +1,28 @@
+# Azure studiebok — öppen referensbok av Marcus Ackre Medina
+
+> Ett uppslagsverk för Azure och molntjänster, skrivet på svenska för YH-studerande och utvecklare.
+> Inte en kurs — en referens du öppnar när du glömt hur man kopplar en Managed Identity eller sätter upp en pipeline.
+
+## Om boken
+
+Boken används i kursen Administrera molnlösningar på ITHS och uppdateras löpande i takt med undervisningen.
+Målgrupp: YH-studerande inom cloud och DevOps.
+Licens: CC BY 4.0 — fri att använda och dela.
+Källa: https://github.com/marcusjobb/azure-studiebok
+Publicerad: https://marcusjobb.github.io/azure-studiebok/
+
+## Ämnen som täcks
+
+- Docker — containers, images, Dockerfile, docker-compose
+- Azure App Service — deployment, slots, skalning
+- Azure Container Instances och Container Registry
+- Kubernetes (AKS) — pods, services, deployments
+- Azure DevOps — pipelines, repos, artefakter
+- Bicep och Infrastructure as Code
+- Managed Identity, Key Vault, RBAC
+- Azure Storage, CosmosDB, SQL
+
+## Författare
+
+Marcus Ackre Medina — lärare i mjukvaruutveckling, NionIT / ITHS
+Kontakt: marcus.medina@nionit.com
