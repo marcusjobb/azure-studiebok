@@ -53,6 +53,12 @@ function getChildren(sectionTitle: string) {
           <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
         </svg>
       </button>
+      <button type="button" id="nav-toggle" class="hdr-btn sidebar-menu-btn" aria-label="Visa/dölj navigering" aria-expanded="false" title="Visa/dölj innehållsförteckning">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
     </div>
   </div>
 
@@ -219,6 +225,24 @@ document.addEventListener('astro:page-load', () => {
   const translateLink = document.getElementById('translate-link') as HTMLAnchorElement | null;
   if (translateLink) {
     translateLink.href = `https://translate.google.com/translate?sl=sv&u=${encodeURIComponent(window.location.href)}`;
+  }
+
+  // Hamburger-meny på mobil
+  const navToggle = document.getElementById('nav-toggle');
+  if (navToggle) {
+    navToggle.addEventListener('click', () => {
+      const sidebar = document.querySelector<HTMLElement>('.sidebar');
+      if (!sidebar) return;
+      const isOpen = sidebar.classList.toggle('sidebar-nav-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    }, { signal });
+  }
+
+  // Stäng mobil-nav vid sidnavigering
+  if (window.innerWidth <= 760) {
+    const sidebar = document.querySelector<HTMLElement>('.sidebar');
+    sidebar?.classList.remove('sidebar-nav-open');
+    document.getElementById('nav-toggle')?.setAttribute('aria-expanded', 'false');
   }
 });
 </script>

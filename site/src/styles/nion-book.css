@@ -220,6 +220,9 @@ a:hover { text-decoration: underline; }
 #font-decrease:hover, #font-increase:hover { border-color: var(--brand); color: var(--text); }
 #font-decrease:disabled, #font-increase:disabled { opacity: 0.35; cursor: default; }
 
+/* Hamburger — visas bara på mobil, döljs på desktop */
+.sidebar-menu-btn { display: none; }
+
 .theme-icon {
   font-size: 0.95rem;
   position: absolute;
@@ -519,6 +522,18 @@ div.highlight pre.highlight,
   max-width: 100%;
 }
 
+/* Fallback när ett enskilt diagram inte gick att rendera — visa som kod istället för att lämna en tom lucka */
+.mermaid-error {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: var(--text-muted);
+}
+
 /* ── Bionic reading mode ── */
 .bionic-word strong { font-weight: 800; }
 
@@ -537,6 +552,11 @@ div.highlight pre.highlight,
     border-right: none;
     border-bottom: 1px solid var(--border);
   }
+  .sidebar-menu-btn { display: flex; }
+  .module-list,
+  .overview-link { display: none; }
+  .sidebar.sidebar-nav-open .module-list { display: flex; }
+  .sidebar.sidebar-nav-open .overview-link { display: block; }
 }
 
 /* ── Hero ── */
@@ -579,6 +599,15 @@ div.highlight pre.highlight,
   line-height: 1.6;
   margin: 0;
 }
+
+.byline {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0 0 1.5rem 0;
+}
+
+.byline a { color: var(--text-muted); text-decoration: underline; }
+.byline a:hover { color: var(--brand); }
 
 .hero-actions {
   display: flex;
