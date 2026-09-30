@@ -1,21 +1,21 @@
 /* ============================================================
-   Nion Book Design System — inspired by kursrum-devops.pages.dev
+   Nion Book Design System â€” inspired by kursrum-devops.pages.dev
    ============================================================ */
 
-/* ── Color tokens ── */
+/* â”€â”€ Color tokens â”€â”€ */
 :root {
   --bg: #fafafa;
   --bg-elevated: #ffffff;
   --text: #09090b;
   --text-muted: #71717a;
   --border: #e4e4e7;
-  --accent: #4f46e5;
+  --accent: #0089d6;
   --accent-contrast: #fff;
   --sidebar-bg: #fafafa;
-  --sidebar-active-bg: #ede9fe;
-  --sidebar-active-text: #4338ca;
-  --brand: #4f46e5;
-  --brand-soft: #eef2ff;
+  --sidebar-active-bg: #bae6fd;
+  --sidebar-active-text: #0369a1;
+  --brand: #0089d6;
+  --brand-soft: #e0f2fe;
   --callout-note-border: #3b82f6;
   --callout-note-bg: #eff6ff;
   --callout-tip-border: #22c55e;
@@ -34,13 +34,13 @@
     --text: #fafafa;
     --text-muted: #a1a1aa;
     --border: #27272a;
-    --accent: #818cf8;
+    --accent: #38bdf8;
     --accent-contrast: #09090b;
     --sidebar-bg: #09090b;
-    --sidebar-active-bg: #1e1b4b;
-    --sidebar-active-text: #c7d2fe;
-    --brand: #818cf8;
-    --brand-soft: #1e1b4b;
+    --sidebar-active-bg: #082f49;
+    --sidebar-active-text: #7dd3fc;
+    --brand: #38bdf8;
+    --brand-soft: #082f49;
     --callout-note-border: #60a5fa;
     --callout-note-bg: #0c1929;
     --callout-tip-border: #34d399;
@@ -59,13 +59,13 @@
   --text: #fafafa;
   --text-muted: #a1a1aa;
   --border: #27272a;
-  --accent: #818cf8;
+  --accent: #38bdf8;
   --accent-contrast: #09090b;
   --sidebar-bg: #09090b;
-  --sidebar-active-bg: #1e1b4b;
-  --sidebar-active-text: #c7d2fe;
-  --brand: #818cf8;
-  --brand-soft: #1e1b4b;
+  --sidebar-active-bg: #082f49;
+  --sidebar-active-text: #7dd3fc;
+  --brand: #38bdf8;
+  --brand-soft: #082f49;
   --callout-note-border: #60a5fa;
   --callout-note-bg: #0c1929;
   --callout-tip-border: #34d399;
@@ -83,13 +83,13 @@
   --text: #09090b;
   --text-muted: #71717a;
   --border: #e4e4e7;
-  --accent: #4f46e5;
+  --accent: #0089d6;
   --accent-contrast: #fff;
   --sidebar-bg: #fafafa;
-  --sidebar-active-bg: #ede9fe;
-  --sidebar-active-text: #4338ca;
-  --brand: #4f46e5;
-  --brand-soft: #eef2ff;
+  --sidebar-active-bg: #bae6fd;
+  --sidebar-active-text: #0369a1;
+  --brand: #0089d6;
+  --brand-soft: #e0f2fe;
   --callout-note-border: #3b82f6;
   --callout-note-bg: #eff6ff;
   --callout-tip-border: #22c55e;
@@ -101,11 +101,11 @@
   color-scheme: light;
 }
 
-/* ── Reset ── */
+/* â”€â”€ Reset â”€â”€ */
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 
-/* ── Base ── */
+/* â”€â”€ Base â”€â”€ */
 body {
   background: var(--bg);
   color: var(--text);
@@ -117,7 +117,7 @@ body {
 a { color: var(--accent); }
 a:hover { text-decoration: underline; }
 
-/* ── Layout ── */
+/* â”€â”€ Layout â”€â”€ */
 .layout {
   display: grid;
   grid-template-columns: 280px 1fr 220px;
@@ -125,7 +125,7 @@ a:hover { text-decoration: underline; }
   min-height: 100vh;
 }
 
-/* ── Sidebar ── */
+/* â”€â”€ Sidebar â”€â”€ */
 .sidebar {
   background: var(--sidebar-bg);
   border-right: 1px solid var(--border);
@@ -138,7 +138,7 @@ a:hover { text-decoration: underline; }
   overflow-y: auto;
 }
 
-/* Ingen animation på sidebaren under Astro view transitions */
+/* Ingen animation pÃ¥ sidebaren under Astro view transitions */
 .sidebar[data-astro-transition-persist] {
   animation: none !important;
 }
@@ -205,7 +205,7 @@ a:hover { text-decoration: underline; }
 
 #bionic-toggle b { font-size: 1rem; font-weight: 900; line-height: 1; }
 
-/* Font size buttons — pill-pair */
+/* Font size buttons â€” pill-pair */
 #font-decrease,
 #font-increase {
   width: auto;
@@ -220,7 +220,7 @@ a:hover { text-decoration: underline; }
 #font-decrease:hover, #font-increase:hover { border-color: var(--brand); color: var(--text); }
 #font-decrease:disabled, #font-increase:disabled { opacity: 0.35; cursor: default; }
 
-/* Hamburger — visas bara på mobil, döljs på desktop */
+/* Hamburger â€” visas bara pÃ¥ mobil, dÃ¶ljs pÃ¥ desktop */
 .sidebar-menu-btn { display: none; }
 
 .theme-icon {
@@ -299,13 +299,13 @@ a:hover { text-decoration: underline; }
   color: var(--sidebar-active-text);
 }
 
-/* ── Main ── */
+/* â”€â”€ Main â”€â”€ */
 .main {
   min-width: 0;
   padding: 2.5rem clamp(1.25rem, 4vw, 3rem);
 }
 
-/* ── Right TOC ── */
+/* â”€â”€ Right TOC â”€â”€ */
 .toc {
   padding: 2.5rem 1rem 2rem 0.5rem;
   position: sticky;
@@ -353,7 +353,7 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
 }
 
-/* ── Prose ── */
+/* â”€â”€ Prose â”€â”€ */
 .prose h1 { margin-top: 0; font-size: 2rem; }
 
 .prose h2 {
@@ -391,7 +391,7 @@ a:hover { text-decoration: underline; }
 
 .prose hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 
-/* ── Inline code ── */
+/* â”€â”€ Inline code â”€â”€ */
 :not(pre) > code {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
@@ -400,7 +400,7 @@ a:hover { text-decoration: underline; }
   font-size: 0.9em;
 }
 
-/* ── Code blocks (Rouge / Jekyll) ── */
+/* â”€â”€ Code blocks (Rouge / Jekyll) â”€â”€ */
 .prose pre,
 .highlight {
   background: var(--bg-elevated);
@@ -444,11 +444,11 @@ div.highlight pre.highlight,
   background: var(--bg-elevated);
 }
 
-/* ── Callouts ──
+/* â”€â”€ Callouts â”€â”€
    Just the Docs outputs callouts as:
    <div class="callout-highlight"><p>...</p></div>  (with callouts_level: quiet)
    or blockquotes with {: .note} etc.
-   We handle both. ── */
+   We handle both. â”€â”€ */
 .callout,
 .callout-highlight,
 .callout-important,
@@ -486,7 +486,7 @@ div.highlight pre.highlight,
   margin-bottom: 0.35rem;
 }
 
-/* ── Details / summary ── */
+/* â”€â”€ Details / summary â”€â”€ */
 .prose details {
   border: 1px solid var(--border);
   background: var(--bg-elevated);
@@ -505,7 +505,7 @@ div.highlight pre.highlight,
 }
 .prose details > summary::-webkit-details-marker { display: none; }
 .prose details > summary::before {
-  content: "▸";
+  content: "â–¸";
   color: var(--brand);
   font-size: 0.9em;
   transition: transform 0.15s;
@@ -514,7 +514,7 @@ div.highlight pre.highlight,
 .prose details[open] > summary { border-bottom: 1px solid var(--border); }
 .prose details > :not(summary) { padding: 0.25rem 1.1rem 1rem; }
 
-/* ── Mermaid (keep bg readable) ── */
+/* â”€â”€ Mermaid (keep bg readable) â”€â”€ */
 .mermaid svg {
   background: var(--bg-elevated) !important;
   border-radius: 6px;
@@ -522,7 +522,7 @@ div.highlight pre.highlight,
   max-width: 100%;
 }
 
-/* Fallback när ett enskilt diagram inte gick att rendera — visa som kod istället för att lämna en tom lucka */
+/* Fallback nÃ¤r ett enskilt diagram inte gick att rendera â€” visa som kod istÃ¤llet fÃ¶r att lÃ¤mna en tom lucka */
 .mermaid-error {
   font-family: var(--font-mono, monospace);
   font-size: 0.85rem;
@@ -534,10 +534,10 @@ div.highlight pre.highlight,
   color: var(--text-muted);
 }
 
-/* ── Bionic reading mode ── */
+/* â”€â”€ Bionic reading mode â”€â”€ */
 .bionic-word strong { font-weight: 800; }
 
-/* ── Mobile ── */
+/* â”€â”€ Mobile â”€â”€ */
 @media (max-width: 1100px) {
   .layout { grid-template-columns: 280px 1fr; }
   .toc { display: none; }
@@ -559,7 +559,7 @@ div.highlight pre.highlight,
   .sidebar.sidebar-nav-open .overview-link { display: block; }
 }
 
-/* ── Hero ── */
+/* â”€â”€ Hero â”€â”€ */
 .hero {
   display: flex;
   flex-direction: column;
@@ -647,7 +647,7 @@ div.highlight pre.highlight,
   color: var(--text-muted);
 }
 
-/* ── Page navigation ── */
+/* â”€â”€ Page navigation â”€â”€ */
 .page-nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -696,7 +696,7 @@ div.highlight pre.highlight,
   .page-nav-next { text-align: left; }
 }
 
-/* ── Search overlay ── */
+/* â”€â”€ Search overlay â”€â”€ */
 #search-overlay {
   position: fixed;
   inset: 0;
@@ -739,7 +739,7 @@ div.highlight pre.highlight,
 
 #pagefind-ui-container { padding: 0.5rem 0.75rem 1rem; }
 
-/* Pagefind UI overrides — zinc/indigo theme */
+/* Pagefind UI overrides â€” zinc/indigo theme */
 #pagefind-ui-container .pagefind-ui__search-input {
   background: var(--bg);
   color: var(--text);
